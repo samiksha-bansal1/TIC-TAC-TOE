@@ -45,6 +45,7 @@ boxes.forEach((box) => {
     count++;
     checkWinner();
     if (count == 9) {
+      checkWinner();
       draw();
     }
   });
