@@ -42,12 +42,13 @@ boxes.forEach((box) => {
       player_O = true;
     }
     box.disabled = true;
-    count++;
+    
     checkWinner();
     if (count == 9) {
       checkWinner();
       draw();
     }
+    count++;
   });
 });
 function draw() {
